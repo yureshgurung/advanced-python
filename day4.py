@@ -23,7 +23,7 @@ a=[1,2,3,4,1]
 
 
 # tuples
-# exactky as list but immutable
+#  but immutable
 # immutable list 
 # b=(1,2,3,4,1)
 # # a=(1)
@@ -39,12 +39,75 @@ a=[1,2,3,4,1]
 #mutable
 # q={}
 # print(type(q))  # Prints <class 'dict'>
-c={1,2,3,4,1}
-print(type(c))  # Prints <class 'set'>
-print(c)  # Prints {1, 2, 3, 4}
-c.add(5)
-print(c)  # Prints {1, 2, 3, 4,
-c.add(3)
-print(c)  # Prints {1, 2, 3, 4,
-c.remove(2)
-print(c)  # Prints {1, 3, 4, 5}
+# c={1,2,3,4,1}
+# print(type(c))  # Prints <class 'set'>
+# print(c)  # Prints {1, 2, 3, 4}
+# c.add(5)
+# print(c)  # Prints {1, 2, 3, 4,
+# c.add(3)
+# print(c)  # Prints {1, 2, 3, 4,
+# c.remove(2)
+# print(c)  # Prints {1, 3, 4, 5}
+
+
+#frozenset
+# immutable version of a set
+# # cannot be changed after creation
+# d=frozenset([1,2,3,4,1])
+# print(type(d))  # Prints <class 'frozenset'>
+# print("hi")
+# print("hi bro")
+
+
+
+
+
+#dictionary
+# key value pair
+# unordered collection
+# mutable
+
+
+
+
+
+
+
+
+#dictionary
+# key value pair
+# unordered collection
+# mutable
+
+dic={
+
+    "name":"john",
+    "age":30,
+    "city":"newyork"
+}
+# print(type(dic))
+# print(dic)
+# print(dic["name"])
+# dic["age"]=31
+# print(dic)
+# dic["name"]="love"
+
+# dic["studentid"]=45
+# print(dic)
+
+# #range
+# r=range(10,5,-1)
+# print(type(r))
+# # for i in r:
+# #   print(i)
+
+# print(r[0])
+# print(r[2:3])
+
+#bytes
+
+b=[12,34,43]
+# b=bytes(23,45,45)
+by=bytes(b)
+print(type(by))
+print(b) 
