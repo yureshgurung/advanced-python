@@ -147,28 +147,176 @@
 # print("")
 
 
-n = 5
-for i in range(n):
+# n = 5
+# for i in range(n):
     
-    for j in range(i, n):               # स्पेस प्रिन्ट गर्छ — left side खाली ठाउँ
-        print(' ', end='')
+#     for j in range(i, n):               # स्पेस प्रिन्ट गर्छ — left side खाली ठाउँ
+#         print(' ', end='')
 
-    for j in range(i + 1):              # पहिलो set of '*'
-        print('*', end='')
+#     for j in range(i + 1):              # पहिलो set of '*'
+#         print('*', end='')
 
-    for j in range(i + 1):              # दोश्रो set of '*'
-        print('*', end='')
+#     for j in range(i + 1):              # दोश्रो set of '*'
+#         print('*', end='')
 
-    print()                             # लाइन ब्रेक (new line)
+#     print()                             # लाइन ब्रेक (new line)
 
 
-n = 5
-for i in range(n):
-    # spaces
-    for j in range(n - i - 1):
-        print(' ', end='')
-    # stars
-    for j in range(2 * i + 1):
-        print('*', end='')
-    # new line
-    print()
+# n = 5
+# for i in range(n):
+#     # spaces
+#     for j in range(n - i - 1):
+#         print(' ', end='')
+#     # stars
+#     for j in range(2 * i + 1):
+#         print('*', end='')
+#     # new line
+#     print()
+
+
+# for i in range(5):
+#     if i ==2:
+#         break
+#     print(i)
+
+
+# for i in range(5):
+#     if i ==2:
+#         continue
+#     print(i)
+
+
+# l=[120,340,560,230,450]
+# for x in l:
+#     if x>=500:
+#         print("high value so i cannt buy ...:",x)
+#         continue
+#     print("low value:",x)
+
+
+#for else
+# l= [23,45,67,89,12]
+# for i in l:
+#     if i==100:
+#         print("found")
+#         break
+# else:
+#     print("not found")
+
+
+#pass
+# class a:
+#     pass
+
+
+# if True:
+#     pass
+# else:
+#     print("hello")
+
+
+#del statement
+
+# s="yuresh"
+# a=s
+# b=a 
+# del s
+# print(a)
+
+
+
+# differrent between del and none
+# x=10
+# x= None
+# print(x)
+
+#assignment 
+#prime number
+#strong number
+# palindrome number/strong
+# armstrong number
+# factorial number
+# fibonacci series
+# swap two numbers
+#harshad (nivent) number
+# perfect number
+#twin prime number
+
+
+#prime number
+# n=int(input("enter a number:"))
+# if n<2:
+#    print("not prime number")
+# else:
+#     for i in range(2,n):
+#         if n%i==0:
+#            print("not prime number:") 
+#            break
+#     else:
+#       print("its prime number")
+
+
+
+
+#  📌 Example 1:
+
+# Number = 145
+
+# Digits → 1, 4, 5
+# 1!=1
+# 4!=24
+
+# 5!=120
+# 1+24+120=145
+
+# ✅ Yes, 145 is a Strong Number
+
+
+# n=int(input("enter a number:"))
+# temp=n
+# sum=0
+# while temp>0:
+#     d=temp%10
+#     f=1
+#     for i in range(1, d+1):
+#          f=f*i
+#     sum=sum +f
+#     temp= temp//10  #It is used to remove the last digit of a number after processing it.
+
+# if sum==n:
+#      print("it's a strong number")    
+# else:
+#      print("not storng ")
+
+
+#palindrome
+# n=int(input("enter number:"))
+# temp=n
+# rev=0
+
+# while temp>0:
+#      digit=temp%10
+#      rev=rev*10+digit
+#      temp=temp//10
+
+# if rev==n:
+#      print(n,"is palindrome number")
+# else:
+#      print("not palindrome"
+
+
+#armstrong
+n=int(input("enter number:"))
+p=len(str(n))
+temp=n
+sum=0
+while temp>0:
+    digit=temp%10
+    s=digit**p
+    sum=sum+s
+    temp//=10
+    
+if n==sum:
+    print(n,"is a armstrong ")
+else:
+    print("not a armstrong")
