@@ -40,3 +40,4 @@ print(type(a))
 # types of argument: postional , keyword, defult,variable length argument
 
 
+#note
