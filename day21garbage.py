@@ -42,9 +42,31 @@ import gc
 
 
 
-class Test:
+# class Test:
+#     def __init__(self):
+#        print("this is constructor ")
+#     def __del__(self):
+#         print("this is destructor")
+# l=[Test(),Test(),Test()]
+
+
+
+class engine:
+    a=10
     def __init__(self):
-       print("this is constructor ")
-    def __del__(self):
-        print("this is destructor")
-l=[Test(),Test(),Test()]
+       self.b=20
+    def m(self):
+        print("i am engine.")
+        
+class car:
+    def __init__(self):
+        self.engine=engine()
+        
+    def m2(self):
+        print("i am car ")
+        print(self.engine.a)
+        print(self.engine.b)
+        self.engine.m()
+        
+c=car()
+c.m2()
